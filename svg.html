@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>svg</title>
+    <style media="screen">
+    *{
+      margin: 0;
+      border: 0;
+      padding: 0;
+    }
+    #svg{
+      background-color: indigo;
+    }
+    #poly{
+      fill:lime;
+      stroke:purple;
+      stroke-width:1;
+    }
+
+    </style>
+  </head>
+  <body>
+    <svg id="svg">
+      <polygon id="poly"></polygon>
+      <!-- points="0,0 30,70 100,100 0,100 -->
+    </svg>
+    <script type="text/javascript">
+      var width = window.innerWidth;
+      var height = window.innerHeight;
+      var svg = document.getElementById("svg");
+      var poly = document.getElementById("poly");
+
+      svg.style.width = width + "px";
+      svg.style.height = height + "px";
+      poly.setAttribute("points", '"' + 0,0 + (width*0.3) + "," + (height*0.7)  + " " + width + "," + height + " 0," + height + '""');
+
+    // poly.style.points = "0,0 " + (width*0.3) + "," + (height*0.7)  + " " + width + "," + height + " 0," + height;
+
+    </script>
+  </body>
+</html>

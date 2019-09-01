@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lechnbakaren</title>
+    <link rel="shortcut icon" href="bilder/g4569.png">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  </head>
+  <body>
+
+
+    <div id="bakgrunn">
+      <video class="bak" src="video/kokker.mp4" autoplay loop muted></video>
+    </div>
+    
+      <img class="logo" src="bilder/g4569.png"/>
+     
+    <div class="bannerInfo">
+     <!-- <img src="bilder/logo.svg"/><br> -->
+     <span class="vi">Vi er <span id="slagOrd">delikatesse</span></span>
+
+    </div>
+
+    <div class="om">
+      <div class="bilder">
+        <img src="bilder/portrett/hans.jpg" id="portrettBak">
+        <img src="bilder/portrett/erika.jpg" id="portrettFrem">
+        <h5 id="navnBak">Hans</h5>
+        <h5 id="navnFrem">Erika</h5>
+      </div>
+      <div class="tekst">
+        <h2>Om oss</h2><br>
+        <p>Vi er ti lidenskapelige elever fra resturant- og matfag på Strinda vidregående skole som har slått oss sammen og dannet en fantastisk resturant. Vi har alle fått god opplæring fra de fantastiske lærerne på Strinda, så ferdigheter skal det ikke stå på. Vi har også vært lidenskapelig opptatt av mat helt siden barndommen og det er noe vi aldri har sluttet med. Om du ønsker en fantastisk mat opplevelse så må du ta turen innom oss på Strinda vidregående skole!</p><br>
+        <p>Om du har store festplaner kan du få tilsendt vår fantastiske mat gjennom vår catering tjeneste, som du finner mer informasjon om lengere ned på siden!</p><br>
+        <span>Spill av: Sade - Smooth operator <audio id="lyd" src="Sade.mp3"></audio> </span><input type="checkbox" id="sang">
+      </div>
+
+    </div>
+    <div id="catering">
+      <div class="cateringTekst">
+        <h2>Catering</h2><br>
+        <p>I Lechnbakaren er vi alle enige om at catering er best, da det skaper sikkelig fest. Det er dette vi brenner for, vi elsker store fester, å det å se smilet til våre kunder i den beste settingen gir en ubeskrivelig følelse. </p><br>
+        <p>Vi har perfeksjonert en catering meny som passer en hver smak så lenge det blir kjøpt in forskellige sorter. Vi har meget bilige priser på vår catring meny, som du kan se til høyre, dette er ingen tilfeldighet da vårt mål er å bli kjent som de beste på catring markedet. Denne prisen er bare midlertidlig til vi klarer å ta catring markedet med storm så du må benytte deg av sjengsen mens det er mulig!</p>
+      </div>
+      <div class="menyVises">
+        <div id="menyAlle">
+          <div id="fem">
+            <img src="bilder/focaccia.jpg"/>
+            <h5>Focaccia</h5>
+            <img src="bilder/personer.png"/><span>4 til 5 personer</span><br>
+            <img src="bilder/penger.png"/><span>250 nok</span>
+          </div>
+          <div id="en">
+            <img src="bilder/fiskesuppe.jpg"/>
+            <h5>Fiskesuppe</h5>
+            <img src="bilder/personer.png"/><span>4 til 5 personer</span><br>
+            <img src="bilder/penger.png"/><span>600 nok</span>
+          </div>
+          <div id="to">
+            <img src="bilder/tapas.png"/>
+            <h5>Tapas</h5>
+            <img src="bilder/personer.png"/><span>5 til 6 personer</span><br>
+            <img src="bilder/penger.png"/><span>950 nok</span>
+          </div>
+          <div id="tre">
+            <img src="bilder/sushi.jpg"/>
+            <h5>Sushi</h5>
+            <img src="bilder/personer.png"/><span>2 til 3 personer</span><br>
+            <img src="bilder/penger.png"/><span>550 nok</span>
+          </div>
+          <div id="fire">
+            <img src="bilder/kyllingsalat.jpg"/>
+            <h5>Kyllingsalat</h5>
+            <img src="bilder/personer.png"/><span>4 til 5 personer</span><br>
+            <img src="bilder/penger.png"/><span>700 nok</span>
+          </div>
+          <div id="fem">
+            <img src="bilder/focaccia.jpg"/>
+            <h5>Focaccia</h5>
+            <img src="bilder/personer.png"/><span>4 til 5 personer</span><br>
+            <img src="bilder/penger.png"/><span>250 nok</span>
+          </div>
+          <div id="en">
+            <img src="bilder/fiskesuppe.jpg"/>
+            <h5>Fiskesuppe</h5>
+            <img src="bilder/personer.png"/><span>4 til 5 personer</span><br>
+            <img src="bilder/penger.png"/><span>600 nok</span>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="pil">
+        <f id="venstre" onclick="flytt(20.5)"></f>
+        <span id="menyTeller">1/5</span>
+        <f id="hoyre" onclick="flytt(-20.5)"></f>
+
+      </div>
+    </div>
+    <div id="hos">  <!--hos de kommer her da jeg ønsket å ha resturanten som bakgrunnsbilde å det går ikke i sliden over med dette designet defor blir konteksten litt dum men det fungerer fortsatt ok-->
+      <!-- <div id="vises">
+        <div class="alle">
+          <div class="en">
+            <h2>Foretter</h2>
+            <rett>Spekkefjøl<rett/><span>60 nok</span>
+            <rett>Melon og skinke</rett><span>50 nok</span>
+            <rett>Cevice</rett><span>70 nok</span>
+            <rett>Sashimi</rett><span>70 nok</span>
+          </div>
+          <div class="to">
+            <h2>Hovedretter</h2>
+            <rett>Burger</rett><span>120 nok</span><br>
+            <rett>Osteburger</rett><span>140 nok</span><br>
+            <rett>Sushi</rett><span>180 nok</span><br>
+            <rett>Fiskesuppe</rett><span>170 nok</span><br>
+          </div>
+          <div class="tre">
+            <h2>Pizza</h2>
+            <rett>Margarita</rett><span>120 nok</span><br>
+            <rett>Bufalala</rett><span>140 nok</span><br>
+            <rett>Focosa</rett><span>180 nok</span><br>
+            <rett>Napolenta</rett><span>170 nok</span><br>
+          </div>
+          <div class="fire">
+            <h2>Hovedretter</h2>
+            <rett>Burger</rett><span>120 nok</span><br>
+            <rett>Osteburger</rett><span>140 nok</span><br>
+            <rett>Sushi</rett><span>180 nok</span><br>
+            <rett>Fiskesuppe</rett><span>170 nok</span><br>
+          </div>
+        </div> -->
+      <!-- </div>
+      <div class="pil">
+        <f id="venstre" onclick="flytt(20)"></f>
+        <f id="hoyre" onclick="flytt(-20)"></f>
+      </div> -->
+      <div class="meny">
+         <h3>Meny</h3>
+         <bold>Foretter</bold>
+         <p>Cevice <span>70 nok</span></p>
+         <p>Melon og skinke <span>50 nok</span></p>
+         <bold>Hovedretter</bold>
+         <p>Entrecote<span>220 nok</span></p>
+         <p>Sushi<span>190 nok</span></p>
+         <p>Pizza Focosa<span>150 nok</span></p>
+         <p>pasta carbonara<span>130 nok</span></p>
+         <bold>Dessert</bold>
+         <p>Sjokolade fondant<span>45 nok</span></p>
+         <p>Sorbe<span>30 nok</span></p>
+         <p>Brownie<span>35 nok</span></p>
+      </div>
+       <div class="hosTekst">
+        <h2>Kom å spis hos oss!</h2><br>
+        <p>Selv om vår drøm er å leve av catring på fulltid, så er ikke det å ha en vakker resturant så mye værre. Ønsker du å oppleve lokalsamfunnets fantastiske matgleder må du ta turen innom oss! Vi har gode priser og en mat som smaker himmelsk. </p><br>
+        <p>Vi har åpent fra klokken 16:30 til 22:00 hver dag heleåret rundt bortsett fra de store helligdagene da vi desverre har stengt.</p><br>
+        <p>Vår meny er ikke serlig stor og det er ingen tilfeldighet da vi tror det er viktigere å ha få supergode retter en å ha mange mellomgode. Vi serverer alle normale drikker pluss at vi har vårt lokalbryggede fatøl som varierer fra uke til uke.</p>
+      </div>
+    </div>
+    <div id="bestill">
+      <div class="form">
+       <form id="form">
+         <h3>Personlig informasjon</h3>
+         <input required id="navn" type="text" placeholder="Fult navn"><input required id="mail" type="email" placeholder="Email"><br>
+         <input required id="tlf" type="tel" placeholder="Telefonnummer"><input required id="adresse" type="text" placeholder="Leveringsadresse"><br>
+         <input required id="dato" type="date" placeholder="leveringsdato"><input required id="tid" type="time" placeholder="Leveringstid"><br>
+         <button type="submit" id="bekreft">Bekreft!</button>
+         <!-- <select id="ned">
+           <option>sushi</option>
+           <option>kylling</option>
+           <option>kylling</option>
+         </select> -->
+       </form>
+       <h3>Leg til rett(er)</h3>
+       <input id="rett" type="text" placeholder="Hvilken rett"><input id="antall" type="number" placeholder="hvor mange">
+       <svg id="legTil">
+         <line x1="0" y1="1vw" x2="2vw" y2="1vw" style="stroke:#b9a9a9;stroke-width:0.2vw"/>
+         <line x1="1vw" y1="2vw" x2="1vw" y2="0" style="stroke:#b9a9a9;stroke-width:0.2vw"/>
+       </svg>
+
+      </div>
+      <div id="kviteringRamme">
+
+
+      <div id="kvitering">
+        <div class="top">
+          <h1>Lechnbakaren</h1>
+          <p>Tlf: 73 82 54 32</p>
+        </div>
+        <div class="varer">
+
+        </div>
+        <div class="total">
+
+        </div>
+      </div>
+      <!-- <div class="knapper">
+        <button type="button">Nullstill</button>
+        <button type="button">fullfør bestilling først</button>
+      </div> -->
+      </div>
+    </div>
+    <div id="fotter">
+      <div class="innhold">
+        <p>Telefonnummer: 73 82 54 32 <span>Epost: kontakt@lechnbakaren.no</span></p>
+        <p>Følg oss på: facebook.com/lechnbakaren & instagram.com.lechnbakaren</p>
+        <p>Alle rettigheter er reservert lechnbakaren AS &copy; 2018</p>
+      </div>
+
+
+    </div>
+
+    <script type="text/javascript" src="index.js">
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,535 @@
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+html{
+  overflow-x: hidden;
+}
+/* bakgruunsbilder start */
+#bakgrunn{
+  position: fixed;
+  width: 100vw;
+  height: 70vh;
+  z-index: -1;
+}
+#bakgrunn .bak{
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  object-fit: cover;
+  opacity: 0.7;
+  filter: grayscale(100%);
+}
+
+/* bakgrunnsbilder slutt */
+/* banner start */
+
+.bannerInfo{
+  z-index: 1;
+  width: 60vw;
+  height: 70vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+}
+.bannerInfo img{
+  width: 8vw;
+  margin-left:26vw;
+  margin-top: 10vh;
+}
+.bannerInfo span{
+  font-size: 2.2vw;
+  color: black;
+}
+.bannerInfo .vi{
+  margin-left: 23vw;
+}
+/* bonus */
+.logo{
+/*width: 100vw;
+  height: 7vh;
+  margin-top: 15vh;
+  margin-left: 35vw; */
+
+  width: 8vw; /*skal bli 7vh etter scroll*/
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 16vh;
+  cursor: auto;
+  margin-bottom: -8.5vh;
+}
+.nav li{
+  display: inline-block;
+  float: right;
+  margin-right: 10vw;
+  font-size: 3vh;
+  margin-top: 2vh;
+  cursor: pointer;
+  opacity: 0;
+}
+/* .nav li:nth-child(2){
+  margin-right: 10vw;
+} */
+.nav li:nth-child(1){
+  float: left;
+  margin-left: 10vw;
+  opacity: 1;
+}
+.nav li img{
+  width: 8vw; /*skal bli 7vh etter scroll*/
+  margin-top: -2vh;
+  cursor: auto;
+}
+/* bonus */
+/* banner slutt */
+/* om start */
+.om{
+  margin-top: -30vh;
+  width: 100vw;
+  height: 54vh;
+  background-color: #efefef;
+  padding-top: 0vh;
+  padding-top: 6vh;
+}
+.bilder{
+  background-color: #f4f4f4;
+  width: 20vw;
+  height: 48vh;
+  margin-left: 12vw;
+  text-align: center;
+  box-shadow: -0.2vw 0.25vw 1vw grey;
+}
+.bilder img{
+  margin-top: 0.5vw;
+  width: 19vw;
+  height: 40vh;
+  object-fit: cover;
+  /* transition: opacity 0.7s; */
+}
+#portrettFrem{
+  position: absolute;
+  margin-left: -19vw;
+}
+#portrettBak{
+  /* opacity: 0; */
+}
+.om .tekst{
+  width: 48vw;
+  margin-left: 40vw;
+  margin-top: -44vh;
+}
+.om .tekst h2{
+  font-size: 2.5vw;
+  color: #B9A9A9;
+}
+.om .tekst p{
+  color: #A9A9A9;
+  font-size: 1.3vw;
+}
+.om .tekst span{
+  color: #A9A9A9;
+  font-size: 1vw;  
+}
+.bilder h5{
+  font-family: 'sofia';
+  font-size: 2vw;
+}
+#navnFrem{
+  margin-top: -3.2vw;
+  transition: opacity 0.7s;
+}
+#navnBak{
+  transition: opacity 0.7s;
+  opacity: 0;
+}
+
+/* om slutt */
+
+/* catering start */
+#catering{
+  padding-top: 11vh;
+  width: 100vw;
+  height: 58vh;
+  background-color: #B9A9A9;
+}
+.cateringTekst{
+  margin-left: 12vw;
+  width: 48vw;
+  height: 40vh;
+}
+#catering h2{
+  font-size: 2.5vw;
+  color: #9E9E9E;
+}
+.cateringTekst p{
+  font-size: 1.3vw;
+  color: #f4f4f4;
+}
+.menyVises{
+  margin-top: -40vh;
+  width: 20.5vw;
+  height: 40vh;
+  margin-left: 68vw;
+  overflow: hidden;
+}
+#menyAlle{
+  margin-left: -20.5vw;
+  transition: margin-left 0.5s;
+}
+#menyAlle div{
+  width: 20vw;
+  height: 40vh;
+  margin-top: -40vh;
+  margin-left: 20.5vw;
+  background-color: #f4f4f4;
+}
+#menyAlle div:nth-child(1){
+  margin-left: 0;
+  margin-top: 0;
+}
+#menyAlle div:nth-child(3){
+  margin-left: 41vw;
+}
+#menyAlle div:nth-child(4){
+  margin-left: 61.5vw;
+}
+#menyAlle div:nth-child(5){
+  margin-left: 82vw;
+}
+#menyAlle div:nth-child(6){
+  margin-left: 102.5vw;
+}
+#menyAlle div:nth-child(7){
+  margin-left: 123vw;
+}
+/* #menyAlle div:nth-child(5){
+  margin-left: 102.5vw;
+} */
+#menyAlle div h5{
+  margin-left: 3vw;
+}
+#menyAlle div img:nth-child(1){
+  width: 19vw;
+  height: 25vh;
+  margin-left: 0.5vw;
+  margin-top: 0.5vw;
+  object-fit: cover;
+}
+#menyAlle div img:nth-child(3), #menyAlle div img:nth-child(6){
+  margin-left: 3vw;
+  width: 2vw;
+  height: 3vh;
+  object-fit: contain;
+}
+#menyAlle div span{
+  margin-left: 1vw;
+}
+
+.pil{
+  margin-top: 2vh;
+  margin-left: 74.5vw;
+  width: 20vw;
+}
+.pil f{
+  border: solid black;
+  border-width: 0 0.3vw 0.3vw 0;
+  display: inline-block;
+  padding: 0.3vw;
+  cursor: pointer
+}
+#venstre{
+  transform: rotate(135deg);
+  margin-right: 2vw;
+}
+#hoyre{
+  transform: rotate(-45deg); /* css har motsatt rotering enn matte aka med klokka*/
+  margin-left: 2vw;
+}
+
+/* catering slutt */
+/* hos start */
+#hos{
+  padding-top: 6vh;
+  width: 100vw;
+  height: 54vh;
+  background-color: rgba(239, 239, 239, 0.87  );
+}
+#hos .hosTekst{
+  margin-left: 40vw;
+  width: 48vw;
+  margin-top: -43vh;
+}
+#hos .hosTekst p{
+  color: #A9A9A9;
+  font-size: 1.3vw;
+}
+
+#hos .hosTekst h2{
+  font-size: 2.5vw;
+  color: #B9A9A9;
+}
+#hos .meny{
+  height: 45vh;
+  width: 20vw;
+  background-color: #b9a9a9;
+  margin-left: 12vw;
+  box-shadow: -0.2vw 0.25vw 1vw grey;
+  border-radius: 0.7vw;
+}
+#hos h3{
+  font-size: 1.5vw;
+  color: #9E9E9E;
+  width: 20vw;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 2vh;
+}
+#hos bold{
+  margin-left: 1vw;
+  font-size: 1.1vw;
+  color: #f4f4f4;
+}
+#hos .meny p{
+  margin-left: 2vw;
+  color: grey;
+  font-size: 1vw;
+}
+#hos .meny p span{
+  float: right;
+  margin-right: 4vw;
+}
+/* #vises{
+  margin-left: 12vw;
+  width: 20vw;
+  height: 45vh;
+  overflow: hidden;
+}
+.alle{
+  margin-left: 0vw;
+  transition: margin-left 0.7s;
+}
+.alle div{
+  width: 20vw;
+  height: 45vh;
+  background-color: #b9a9a9;
+  margin-top: -45vh;
+  margin-left: 20vw;
+}
+.alle div:nth-child(odd){
+  background-color: grey
+}
+.alle div:nth-child(1){
+  margin-top: 0;
+  margin-left: 0;
+}
+.alle div:nth-child(3){
+  margin-left: 40vw;
+}
+.alle div:nth-child(4){
+  margin-left: 60vw;
+}
+.alle h2{
+  width: 20vw;
+  text-align: center;
+}
+.alle rett{
+  margin-left: 2vw;
+  width: 10vw;
+  background-color: pink;
+}
+.alle span{
+  width: 6vw;
+} */
+/* #vises .en{
+  width: 20vw;
+  height: 45vh;
+  background-color: indigo;
+}
+#vises .to{
+  width: 20vw;
+  height: 45vh;
+  background-color: blue;
+  margin-top: -45vh;
+  margin-left: 20vw;
+} */
+
+/* hos slutt */
+/* hyr start */
+#bestill{
+  padding-top: 3.5vh;
+  width: 100vw;
+  height: 56.5vh;
+  background-color: #B9A9A9;
+  color: #f4f4f4;
+}
+/* #bestill .bestillInfo{
+  margin-left: 12vw;
+  width: 48vw;
+  height: 40vh;
+}
+#bestill .bestillInfo h2{
+  font-size: 2.5vw;
+  color: #9E9E9E;
+
+}
+#bestill .bestillInfo p{
+  font-size: 1.3vw;
+} */
+#bestill .form{
+  margin-left: 12vw;
+  /* margin-top: -44vh; */
+  width: 50vw;
+  height: 53vh;
+  background-color: #eee;
+  box-shadow: 0.2vw 0.25vw 1vw grey;
+  text-align: center;
+}
+#bestill .form h3{
+  padding-top: 2vh;
+  margin-bottom: 0.5vh;
+  color: #A9A9A9;
+}
+#bestill .form input{
+  padding: 2vh;
+  margin-top: 0.4vw;
+  width: 15vw;
+  background-color: #eee;
+  border: 0.05vw solid black;
+  border-radius: 1vw;
+  font-variant: small-caps;
+  color: #A9A9A9;
+  float: left;
+  margin-left: 7vw;
+  font-size: 1.2vw;
+}
+#bestill .form #form input:nth-child(3),
+#bestill .form #form input:nth-child(6),
+#bestill .form #form input:nth-child(9){
+  float: right;
+  margin-right: 7vw;
+  margin-left: 0;
+}
+#bestill .form input#antall{
+  float: right;
+  margin-right: 12vw;
+  margin-left: 0;
+  width: 10vw;
+}
+#legTil{
+  cursor: pointer;
+  position: absolute;
+  margin-left: 14vw;
+  margin-top:2vh;
+  height: 2vw;
+  width: 2vw;
+  transition: filter 0.5s;
+}
+#legTil:hover{
+  filter: drop-shadow(0.1vw 0.1vw 0.1vw grey);
+}
+#bekreft{
+  margin-top: 1vh;
+  width: 6vw;
+  background-color: #B9A9A9;
+  padding: 1vh;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  color: #f4f4f4;
+  transition: width 0.3s;
+  font-size: 0.85vw;
+}
+#bekreft:hover{
+  width: 7vw;
+}
+button:focus, input:focus{
+  outline: none;
+}
+
+::placeholder{
+  color: #A9A9A9;
+  opacity: 1;
+  font-size: 0.9vw;
+}
+  /* kvitering */
+#kvitering{
+  color: #a9a9a9;
+  width: 20vw;
+  height: 53vh;
+  background-color: #eee;
+  float: right;
+  margin-right: 12vw;
+  margin-top: -53vh;
+  box-shadow: 0.2vw 0.25vw 1vw grey;
+}
+#kvitering .top{
+  height: 12vh;
+  text-align: center;
+  border-bottom: 0.1vw dashed #a9a9a9;
+}
+#kvitering .top p{
+  font-size: 0.5vw;
+  width: 20vw;
+}
+#kvitering .varer{
+  height: 36vh;
+  border-bottom: 0.1vw dashed #a9a9a9;
+}
+#kvitering v{
+  margin-left: 1vw;
+}
+#kvitering span{
+  float: right;
+  margin-right: 1vw;
+}
+#kvitering .total{
+  height: 4vh;
+}
+/* hyr slutt */
+/* fotter start */
+#fotter{
+  padding-top: 6vh;
+  width: 100vw;
+  height: 14vh;
+  margin-top: 10vh;
+  background-color: #9e9e9e;
+  text-align: center;
+  color: #f4f4f4;
+  font-size: 1.05vw;
+}
+#fotter span{
+  margin-left: 3vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* bunn */
